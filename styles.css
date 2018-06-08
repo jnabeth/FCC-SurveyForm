@@ -1,0 +1,107 @@
+body {
+  background-color: #435477;
+  font-family: Helvetica, sans-serif;
+}
+
+#title {
+  text-align: center;
+  color: white;
+}
+
+#form-container {
+  color: black;
+  background-color: gainsboro;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  border-radius: 2px;
+  text-align: center;
+  padding: 15px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#description {
+  font-size: 19px;
+}
+#preferences {
+  list-style: none;
+}
+#survey-form {
+  line-height: 2.5;
+}
+
+.label {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  line-height: 1.5;
+  vertical-align: middle;
+  margin-top: 20px;
+}
+
+.usr-input {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.dropdowns {
+  background: transparent;
+  height: 23px;
+  width: 132px;
+}
+
+.radio-select {
+  background: transparent;
+  line-height: 1.2;
+}
+
+input {
+  height: 18px;
+}
+
+.input-field {
+  width: 150px;
+}
+
+#preferences {
+    padding: 0px;
+}
+
+#recommendation {
+    padding: 0px;
+}
+
+#usr-comments {
+    width: 210px;
+    height: 10vh;
+    resize: vertical;
+    overflow: auto;
+}
+
+#submit {
+  background-color: #437766;
+  width: 150px;
+  height: 5vh;
+  font-size: 18px;
+  color: white;
+  border-radius: 1vh;
+  margin-top: 1.5vh;
+}
+
+@media screen and (max-width: 600px) {
+#usr-comments {
+      width: 80%;
+  }
+.input-field {
+    width: 63%;
+  }
+.dropdowns{
+    width: 63%;
+  }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>FCC: Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <div id="form-container">
+      <p id="description">Please let us know how we can improve FCC!</p>
+      <form id="survey-form">
+        <div class="rows">
+          <div class="label">
+            <label id="name-label" for="name">* Name:</label>
+          </div>
+          <div class="usr-input">
+            <input type="text" id="name" name="user-name" class="input-field" placeholder="Enter your name" required>
+          </div>
+        </div>
+        <div class="rows">
+          <div class="label">
+            <label id="email-label" for="email">* Email:</label>
+          </div>
+          <div class="usr-input">
+            <input type="email" id="email" name="user-email" class="input-field" placeholder="Enter your email" required>
+          </div>
+        </div>
+        <div class="rows">
+          <div class="label">
+            <label id="number-label" for="age">* Age</label>:
+          </div>
+          <div class="usr-input">
+            <input id="number" id="number" type="number" name="age" class="input-field" placeholder="Enter your age" required min="1" max="130">
+          </div>
+        </div>
+        <div class="rows">
+          <div class="label">
+            Which option best describes your current role?:
+          </div>
+          <div class="usr-input">
+            <select class="dropdowns" id="dropdown">
+              <option disabled selected>Select an option</option>
+              <option value="student">Student</option>
+              <option value="FullTimeJOb">Full Time Job</option>
+              <option value="FullTimeLearner">Full Time Learner</option>
+              <option value="PreferNotSay">Prefer not to say</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="rows">
+          <div class="label">
+            * How likely is that you would recommend freeCodeCamp to a friend?
+          </div>
+          <div class="usr-input radio-select">
+            <ul id="recommendation">
+              <input type="radio" name="recommend" value="Absolutely"> Absolutely<br>
+              <input type="radio" name="recommend" value="Maybe"> Maybe<br>
+              <input type="radio" name="recommend" value="Not Sure"> Not Sure
+            </ul>
+          </div>
+        </div>
+        <div class="rows">
+          <div class="label">
+            What do you like most in FCC?
+          </div>
+          <div class="usr-input">
+            <select class="dropdowns">
+              <option disabled selected>Select an option</option>
+              <option value="Challenges">Challenges</option>
+              <option value="Projects">Projects</option>
+              <option value="Community">Community</option>
+              <option value="OpenSource">Open Source</option>
+            </select>
+          </div>
+        </div>
+        <div class="rows">
+          <div class="label">
+            Things that should be improved in the future (Check all that apply):
+          </div>
+          <div class = "usr-input checkbox-select">
+            <ul id="preferences" >
+              <li class="checkbox">
+                <input type="checkbox" value="1"> Front-end Projects
+              </li>
+              <li class="checkbox">
+                <input type="checkbox" value="2"> Back-end Projects
+              </li>
+              <li class="checkbox">
+                <input type="checkbox" value="3"> Data Visualization
+              </li>
+              <li class="checkbox">
+                <input type="checkbox" value="4"> Challenges
+              </li>
+              <li class="checkbox">
+                <input type="checkbox" value="5"> Open Source Community
+              </li>
+              <li class="checkbox">
+                <input type="checkbox" value="6"> Gitter help rooms
+              </li>
+              <li class="checkbox">
+                <input type="checkbox" value="7"> City Meetups
+              </li>
+              <li class="checkbox">
+                <input type="checkbox" value="8"> Wiki
+              </li>
+              <li class="checkbox">
+                <input type="checkbox" value="9"> Forum
+              </li>
+              <li class="checkbox">
+                <input type="checkbox" value="10"> Additional Courses
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rows">
+          <div class="label">
+            Any Comments or Suggestions?
+          </div>
+          <div class="usr-input">
+            <textarea id="usr-comments" name="comments" placeholder="Enter your comments/suggestions here"></textarea>
+          </div>
+        </div>
+        <button id=submit type"submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
